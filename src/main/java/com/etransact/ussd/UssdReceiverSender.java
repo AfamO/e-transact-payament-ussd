@@ -260,7 +260,7 @@ public class UssdReceiverSender extends MchoiceUssdReceiver {
             Account userAccount = accountService.getUserAccount(msisdnAddress);
             Number balance = accountService.getUserAccountBalance(userAccount, currentUserMap.get("Pin").toString());
             if(balance!=null && balance!= new Integer(-1))
-                mchoiceUssdSender.sendMessage("Dear "+userAccount.getFullName()+"\n Your Account Balance is::N"+balance+" \n\n\n9) Back\n10) Exit", msisdnAddress, sessionId, true);
+                mchoiceUssdSender.sendMessage("Dear "+userAccount.getFullName()+"\n Your Account Balance is::N "+balance+" \n\n\n9) Back\n10) Exit", msisdnAddress, sessionId, true);
             else
                 mchoiceUssdSender.sendMessage("OOps! Ensure your pin is valid  \n\n\n9) Back\n10) Exit", msisdnAddress, sessionId, true);
             System.out.println("Completed Account Info::");

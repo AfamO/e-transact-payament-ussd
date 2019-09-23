@@ -77,7 +77,7 @@ public class AccountServiceImp implements AccountService {
         Map<String,Object> transactionDetails= new HashMap<>();
         if(account!=null){
             if(account.getPin().equalsIgnoreCase(pin)){
-                if(account.getBalanceAmount() < amount){
+                if(account.getBalanceAmount() > amount){
                     Double newBalance = account.getBalanceAmount() - amount;
                     account.setBalanceAmount(newBalance);
                     this.accountRepostory.save(account); // save and update the new user balance
@@ -85,11 +85,11 @@ public class AccountServiceImp implements AccountService {
                     transactionDetails.put("status", "success");
                 }
                 else{
-                    transactionDetails.put("status", "Insufficient amount");
+                    transactionDetails.put("status", "Insufficient fund!");
                 }
             }
             else{
-                transactionDetails.put("status", "Invalid pin");
+                transactionDetails.put("status", "Invalid pin!") ;
             }
         }
         else{
