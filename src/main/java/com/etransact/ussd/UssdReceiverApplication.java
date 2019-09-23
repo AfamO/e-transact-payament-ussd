@@ -1,4 +1,4 @@
-package com.etransact.ussd.ussdReceiver;
+package com.etransact.ussd;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

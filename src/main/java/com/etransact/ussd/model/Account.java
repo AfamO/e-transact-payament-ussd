@@ -27,6 +27,7 @@ public class Account {
     private String pin;
     private Double balanceAmount=0.0;
     private String accountNumber;
+    private int status =-1; // -1 = not created yet, 0 = inactive, 1= active
 
     public Long getId() {
         return id;
@@ -128,6 +129,14 @@ public class Account {
             return false;
         }
         return true;
+    }
+
+    public int getStatus() {
+        return status;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
     }
     
     

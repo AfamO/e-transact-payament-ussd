@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package com.etransact.ussd.ussdReceiver;
+package com.etransact.ussd;
 
 import com.etransact.ussd.model.Account;
 import com.etransact.ussd.services.AccountService;
@@ -24,15 +24,20 @@ import javax.servlet.annotation.WebServlet;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Controller;
 
 /**
  *
  * @author HP
  */
+@Component
 @WebServlet(urlPatterns = "/ussd/*", loadOnStartup = 1)
+@Controller
 public class UssdReceiverSender extends MchoiceUssdReceiver {
    
-   AccountService accountService = getAccountService();
+   @Autowired
+   AccountService accountService; //= getAccountService();
    @Value("${ussd.url}")
    private String ussd_host_url;
    @Value("${ussd.username}")
@@ -40,10 +45,6 @@ public class UssdReceiverSender extends MchoiceUssdReceiver {
    @Value("${ussd.password}")
    private String ussd_password; 
    
-   @Bean
-   AccountService getAccountService(){
-       return new AccountServiceImp();
-   }
    private ConcurrentMap<String,Object> usersMap = new ConcurrentHashMap<>(); // contains the address and the info of the users concurrently- in a threade-safe way
     private static final String[] menus= {"Welcome To E-Transact App\n------\n1 Create An account\n2 Deposit\n3 Withdraw\n4 Check Balance\n\n10) Exit\n\nChoose an option",
          "Enter your FullName:\n\n\n9) Back\n10) Exit",
@@ -206,6 +207,7 @@ public class UssdReceiverSender extends MchoiceUssdReceiver {
         }
         else if(levelNumber ==4){
             currentUserMap.put("Pin", userMessage); // temporary store the user's data
+            currentUserMap.put("PhoneNumber", msisdnAddress);// add the user's msisdn.
             Account userAccount = accountService.createAccount(currentUserMap);
             if(userAccount!=null)
                 mchoiceUssdSender.sendMessage("Congratulations! "+currentUserMap.get("FullName")+" You have successfully created your account\n\n\n9) Back\n10) Exit", msisdnAddress, sessionId, true);

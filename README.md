@@ -1,2 +1,2 @@
-# e-transact-payament-ussd
+# e-transact-payment-ussd
 A ussd Payment App

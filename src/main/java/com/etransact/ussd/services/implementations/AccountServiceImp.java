@@ -30,15 +30,21 @@ public class AccountServiceImp implements AccountService {
     @Override
     @Transactional
     public Account createAccount(Map usersDetails) {
+        Account existingAccount=this.accountRepostory.findByPhoneNumber(usersDetails.get("PhoneNumber").toString());
+        if(existingAccount!=null){  // Is this user already existing ?
+            return existingAccount;
+        }
+        //new user
         Account newUserAccount = new Account();
         newUserAccount.setFullName(usersDetails.get("FullName").toString());
         newUserAccount.setAddress(usersDetails.get("Address").toString());
         newUserAccount.setPhoneNumber(usersDetails.get("PhoneNumber").toString());
-        newUserAccount.setBalanceAmount(Double.parseDouble(usersDetails.get("Amount").toString()));
         newUserAccount.setPin(usersDetails.get("Pin").toString());
         newUserAccount.setUserName(usersDetails.get("UserName").toString());
         newUserAccount.setAccountNumber(usersDetails.get("PhoneNumber").toString()+usersDetails.get("FullName").toString().length());
-        Account savedAccount = this.accountRepostory.save(newUserAccount);
+        Account savedAccount = accountRepostory.save(newUserAccount);
+        savedAccount.setStatus(1);
+        savedAccount = accountRepostory.save(savedAccount);
         return savedAccount;
     }
 
