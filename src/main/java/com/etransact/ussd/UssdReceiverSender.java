@@ -7,8 +7,11 @@
 package com.etransact.ussd;
 
 import com.etransact.ussd.model.Account;
+import com.etransact.ussd.model.PaymentRequest;
 import com.etransact.ussd.services.AccountService;
+import com.etransact.ussd.services.PaymentService;
 import com.etransact.ussd.services.implementations.AccountServiceImp;
+import com.etransact.ussd.util.AppLogger;
 import hms.sdp.ussd.MchoiceUssdException;
 import hms.sdp.ussd.MchoiceUssdMessage;
 import hms.sdp.ussd.MchoiceUssdTerminateMessage;
@@ -37,13 +40,16 @@ import org.springframework.stereotype.Controller;
 public class UssdReceiverSender extends MchoiceUssdReceiver {
    
    @Autowired
-   AccountService accountService; //= getAccountService();
+   AccountService accountService; 
+   @Autowired
+   PaymentService paymentService;
    @Value("${ussd.url}")
    private String ussd_host_url;
    @Value("${ussd.username}")
    private String ussd_username;
    @Value("${ussd.password}")
    private String ussd_password; 
+   AppLogger appLogger=new AppLogger(this.getClass());
    
    private ConcurrentMap<String,Object> usersMap = new ConcurrentHashMap<>(); // contains the address and the info of the users concurrently- in a threade-safe way
     private static final String[] menus= {"Welcome To E-Transact App\n------\n1 Create An account\n2 Deposit\n3 Withdraw\n4 Check Balance\n\n10) Exit\n\nChoose an option",
@@ -58,19 +64,18 @@ public class UssdReceiverSender extends MchoiceUssdReceiver {
         String msisdnAddress =ussdMessage.getAddress();
         String sessionId = ussdMessage.getConversationId();
         String correlationId = ussdMessage.getCorrelationId();
-        System.out.println("User Message: " + userMessage);
-        System.out.println("Address: " + msisdnAddress);
-        System.out.println("Conversation ID: " + sessionId);
-        System.out.println("Correlation ID: " + correlationId);
-        
+        appLogger.log("User Message: " + userMessage);
+        appLogger.log("Address: " + msisdnAddress);
+        appLogger.log("Conversation ID: " + sessionId);
+        appLogger.log("Correlation ID: " + correlationId);         
         try {
             MchoiceUssdSender mchoiceUssdSender = new MchoiceUssdSender(ussd_host_url,ussd_username,ussd_password);
             
              Map<String, Object> currentUserMap= (Map<String, Object>)usersMap.get(msisdnAddress);
-             System.out.println("currentUserMap =="+currentUserMap);
+             appLogger.log("currentUserMap =="+currentUserMap);
              // Is this user here?
              if(usersMap.containsKey(msisdnAddress)){
-                 currentUserMap.forEach((k,v)->System.out.println(k+" "+v));
+                 currentUserMap.forEach((k,v)->appLogger.log(k+" "+v));
                  /**
                  
                  */
@@ -123,7 +128,7 @@ public class UssdReceiverSender extends MchoiceUssdReceiver {
                      default:
                      {
                          if(currentUserMap.get("selectionNumber")==null){
-                             System.out.println("Please select something");
+                             appLogger.log("Please select something");
                             // re-Send the menu
                             mchoiceUssdSender.sendMessage(menus[0], msisdnAddress, sessionId, true);
                          } 
@@ -131,8 +136,8 @@ public class UssdReceiverSender extends MchoiceUssdReceiver {
                              // Process other sub menus and levels
                              int selectionNumber=(Integer)currentUserMap.get("selectionNumber");//selectionNumber
                              int levelNumber = (Integer) currentUserMap.get("levelNumber");
-                             System.out.println("selectionNumber: " + selectionNumber);
-                             System.out.println("levelNumber: " + levelNumber);
+                             appLogger.log("selectionNumber: " + selectionNumber);
+                             appLogger.log("levelNumber: " + levelNumber);
                              
                              if(userMessage!=null && userMessage.length()>=2){ // did the user enter atleast 2 characters ?
                                  //Process Account Creation
@@ -164,7 +169,7 @@ public class UssdReceiverSender extends MchoiceUssdReceiver {
              }
              else{
                  // a new user
-                 System.out.println("A first time user. Please select something");
+                 appLogger.log("A first time user. Please select something");
                  usersMap.put(msisdnAddress, new HashMap(){{
                     usersMap.put("selectionNumber", 0);
                     usersMap.put("levelNumber", 0);
@@ -213,8 +218,8 @@ public class UssdReceiverSender extends MchoiceUssdReceiver {
                 mchoiceUssdSender.sendMessage("Congratulations! "+currentUserMap.get("FullName")+" You have successfully created your account\n\n\n9) Back\n10) Exit", msisdnAddress, sessionId, true);
             else
                 mchoiceUssdSender.sendMessage("OOps! "+currentUserMap.get("FullName")+" Error creating your account\n Try again later\n\n\n9) Back\n10) Exit", msisdnAddress, sessionId, true);
-            System.out.println("Completed Account Info::");
-            currentUserMap.forEach((k,v)->System.out.println(k+" "+v));
+            appLogger.log("Completed Account Info::");
+            currentUserMap.forEach((k,v)->appLogger.log(k+" "+v));
         }
 
     }
@@ -222,12 +227,13 @@ public class UssdReceiverSender extends MchoiceUssdReceiver {
     private void processAccountDeposit(String userMessage,int levelNumber,Map<String, Object> currentUserMap,MchoiceUssdSender mchoiceUssdSender,String msisdnAddress, String sessionId) throws MchoiceUssdException{
         if(levelNumber ==1){
             currentUserMap.put("Amount", userMessage); // temporary store the user's data
+            //paymentService.initiatePayment(new PaymentRequest());// Disable Paystack Payment Api for now
             if(accountService.depositUserFund(msisdnAddress, Double.parseDouble(currentUserMap.get("Amount").toString())))
                 mchoiceUssdSender.sendMessage("Congratulations! "+" You have successfully deposited your cash\n\n\n9) Back\n10) Exit", msisdnAddress, sessionId, true);
             else
                 mchoiceUssdSender.sendMessage("OOps!  Error occured depositing your cash\n Try again later\n\n\n9) Back\n10) Exit", msisdnAddress, sessionId, true);
-            System.out.println("Completed Account Info::");
-            currentUserMap.forEach((k,v)->System.out.println(k+" "+v));
+            appLogger.log("Completed Account Info::");
+            currentUserMap.forEach((k,v)->appLogger.log(k+" "+v));
             currentUserMap.put("levelNumber", 2);
         }
     }
@@ -247,8 +253,8 @@ public class UssdReceiverSender extends MchoiceUssdReceiver {
                 mchoiceUssdSender.sendMessage("Please take your withdrawn cash here: N"+withdrawDetails.get("withdrawn_amount").toString()+" \n\n\n9) Back\n10) Exit", msisdnAddress, sessionId, true);
             else
                 mchoiceUssdSender.sendMessage("OOps!  Error occured withdrawing your cash\n\n Error Message:"+withdrawDetails.get("status").toString()+" \n\n\n9) Back\n10) Exit", msisdnAddress, sessionId, true);
-            System.out.println("Completed Account Info::");
-            currentUserMap.forEach((k,v)->System.out.println(k+" "+v));
+            appLogger.log("Completed Account Info::");
+            currentUserMap.forEach((k,v)->appLogger.log(k+" "+v));
 
         }
     }
@@ -263,8 +269,8 @@ public class UssdReceiverSender extends MchoiceUssdReceiver {
                 mchoiceUssdSender.sendMessage("Dear "+userAccount.getFullName()+"\n Your Account Balance is::N "+balance+" \n\n\n9) Back\n10) Exit", msisdnAddress, sessionId, true);
             else
                 mchoiceUssdSender.sendMessage("OOps! Ensure your pin is valid  \n\n\n9) Back\n10) Exit", msisdnAddress, sessionId, true);
-            System.out.println("Completed Account Info::");
-            currentUserMap.forEach((k,v)->System.out.println(k+" "+v));
+            appLogger.log("Completed Account Info::");
+            currentUserMap.forEach((k,v)->appLogger.log(k+" "+v));
 
         }
     }

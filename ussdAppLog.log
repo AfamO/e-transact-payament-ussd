@@ -1,0 +1,15 @@
+2019-09-23 21:03:58 INFO ussdAppLog: UssdReceiverSender::User Message: *313#
+2019-09-23 21:03:58 INFO ussdAppLog: UssdReceiverSender::Address: 6308c36367566bfa641d5e4e6656104b
+2019-09-23 21:03:58 INFO ussdAppLog: UssdReceiverSender::Conversation ID: 3.757622099484067E9
+2019-09-23 21:03:58 INFO ussdAppLog: UssdReceiverSender::Correlation ID: 0.5882725362266247
+2019-09-23 21:04:12 INFO ussdAppLog: PaymentServiceImp::Paystack Payment Api successfully initiated
+2019-09-23 21:04:12 INFO ussdAppLog: UssdReceiverSender::currentUserMap ==null
+2019-09-23 21:04:12 INFO ussdAppLog: UssdReceiverSender::A first time user. Please select something
+2019-09-23 21:07:29 INFO ussdAppLog: UssdReceiverSender::User Message: *313#
+2019-09-23 21:07:29 INFO ussdAppLog: UssdReceiverSender::Address: 6308c36367566bfa641d5e4e6656104b
+2019-09-23 21:07:29 INFO ussdAppLog: UssdReceiverSender::Conversation ID: 8.97216499480721E9
+2019-09-23 21:07:29 INFO ussdAppLog: UssdReceiverSender::Correlation ID: 0.8172960760745955
+2019-09-23 21:11:30 INFO ussdAppLog: UssdReceiverSender::User Message: *313#
+2019-09-23 21:11:30 INFO ussdAppLog: UssdReceiverSender::Address: 6308c36367566bfa641d5e4e6656104b
+2019-09-23 21:11:30 INFO ussdAppLog: UssdReceiverSender::Conversation ID: 9.074788778326359E9
+2019-09-23 21:11:30 INFO ussdAppLog: UssdReceiverSender::Correlation ID: 0.7194414753942162
