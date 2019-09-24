@@ -12,6 +12,7 @@ import com.etransact.ussd.services.AccountService;
 import com.etransact.ussd.services.PaymentService;
 import com.etransact.ussd.services.implementations.AccountServiceImp;
 import com.etransact.ussd.util.AppLogger;
+import com.etransact.ussd.util.SmsSender;
 import hms.sdp.ussd.MchoiceUssdException;
 import hms.sdp.ussd.MchoiceUssdMessage;
 import hms.sdp.ussd.MchoiceUssdTerminateMessage;
@@ -220,6 +221,8 @@ public class UssdReceiverSender extends MchoiceUssdReceiver {
                 mchoiceUssdSender.sendMessage("OOps! "+currentUserMap.get("FullName")+" Error creating your account\n Try again later\n\n\n9) Back\n10) Exit", msisdnAddress, sessionId, true);
             appLogger.log("Completed Account Info::");
             currentUserMap.forEach((k,v)->appLogger.log(k+" "+v));
+             // not the way it should be for now---testing
+             new SmsSender().sendSMS("+2348064500095", "Thank you for using e-transact app");
         }
 
     }
@@ -234,7 +237,9 @@ public class UssdReceiverSender extends MchoiceUssdReceiver {
                 mchoiceUssdSender.sendMessage("OOps!  Error occured depositing your cash\n Try again later\n\n\n9) Back\n10) Exit", msisdnAddress, sessionId, true);
             appLogger.log("Completed Account Info::");
             currentUserMap.forEach((k,v)->appLogger.log(k+" "+v));
-            currentUserMap.put("levelNumber", 2);
+            currentUserMap.put("levelNumber", 2); 
+            // not the way it should be for now---testing
+            new SmsSender().sendSMS("+2348064500095", "Thank you for using e-transact app");
         }
     }
     
