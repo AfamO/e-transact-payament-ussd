@@ -13,3 +13,304 @@
 2019-09-23 21:11:30 INFO ussdAppLog: UssdReceiverSender::Address: 6308c36367566bfa641d5e4e6656104b
 2019-09-23 21:11:30 INFO ussdAppLog: UssdReceiverSender::Conversation ID: 9.074788778326359E9
 2019-09-23 21:11:30 INFO ussdAppLog: UssdReceiverSender::Correlation ID: 0.7194414753942162
+2019-09-24 15:40:57 INFO ussdAppLog: UssdReceiverSender::User Message: *313#
+2019-09-24 15:40:57 INFO ussdAppLog: UssdReceiverSender::Address: 6308c36367566bfa641d5e4e6656104b
+2019-09-24 15:40:57 INFO ussdAppLog: UssdReceiverSender::Conversation ID: 4.069848164267643E9
+2019-09-24 15:40:57 INFO ussdAppLog: UssdReceiverSender::Correlation ID: 0.6221903249416512
+2019-09-24 15:40:57 INFO ussdAppLog: UssdReceiverSender::currentUserMap ==null
+2019-09-24 15:40:57 INFO ussdAppLog: UssdReceiverSender::A first time user. Please select something
+2019-09-24 16:01:26 INFO ussdAppLog: UssdReceiverSender::User Message: *313#
+2019-09-24 16:01:26 INFO ussdAppLog: UssdReceiverSender::Address: 6308c36367566bfa641d5e4e6656104b
+2019-09-24 16:01:26 INFO ussdAppLog: UssdReceiverSender::Conversation ID: 3.3565202476125035E9
+2019-09-24 16:01:26 INFO ussdAppLog: UssdReceiverSender::Correlation ID: 0.7831268267332218
+2019-09-24 16:01:26 INFO ussdAppLog: UssdReceiverSender::currentUserMap ==null
+2019-09-24 16:01:26 INFO ussdAppLog: UssdReceiverSender::A first time user. Please select something
+2019-09-24 16:01:46 INFO ussdAppLog: UssdReceiverSender::User Message: 1
+2019-09-24 16:01:46 INFO ussdAppLog: UssdReceiverSender::Address: 6308c36367566bfa641d5e4e6656104b
+2019-09-24 16:01:46 INFO ussdAppLog: UssdReceiverSender::Conversation ID: 3.437863675627384E8
+2019-09-24 16:01:46 INFO ussdAppLog: UssdReceiverSender::Correlation ID: 0.3954214384208312
+2019-09-24 16:01:46 INFO ussdAppLog: UssdReceiverSender::currentUserMap =={}
+2019-09-24 16:02:25 INFO ussdAppLog: UssdReceiverSender::User Message: 1
+2019-09-24 16:02:25 INFO ussdAppLog: UssdReceiverSender::Address: 060307ec9aa619a638a064a77e39046c
+2019-09-24 16:02:25 INFO ussdAppLog: UssdReceiverSender::Conversation ID: 9.354916514136122E9
+2019-09-24 16:02:25 INFO ussdAppLog: UssdReceiverSender::Correlation ID: 0.7144531437213107
+2019-09-24 16:02:25 INFO ussdAppLog: UssdReceiverSender::currentUserMap ==null
+2019-09-24 16:02:25 INFO ussdAppLog: UssdReceiverSender::A first time user. Please select something
+2019-09-24 16:02:36 INFO ussdAppLog: UssdReceiverSender::User Message: 1
+2019-09-24 16:02:36 INFO ussdAppLog: UssdReceiverSender::Address: 060307ec9aa619a638a064a77e39046c
+2019-09-24 16:02:36 INFO ussdAppLog: UssdReceiverSender::Conversation ID: 3.8919313099748545E9
+2019-09-24 16:02:36 INFO ussdAppLog: UssdReceiverSender::Correlation ID: 0.41288356638503576
+2019-09-24 16:02:36 INFO ussdAppLog: UssdReceiverSender::currentUserMap =={}
+2019-09-24 16:03:13 INFO ussdAppLog: UssdReceiverSender::User Message: George Bush
+2019-09-24 16:03:13 INFO ussdAppLog: UssdReceiverSender::Address: 060307ec9aa619a638a064a77e39046c
+2019-09-24 16:03:13 INFO ussdAppLog: UssdReceiverSender::Conversation ID: 2.50431584841584E9
+2019-09-24 16:03:13 INFO ussdAppLog: UssdReceiverSender::Correlation ID: 0.4597339702756952
+2019-09-24 16:03:13 INFO ussdAppLog: UssdReceiverSender::currentUserMap =={selectionNumber=1, levelNumber=1}
+2019-09-24 16:03:13 INFO ussdAppLog: UssdReceiverSender::selectionNumber 1
+2019-09-24 16:03:13 INFO ussdAppLog: UssdReceiverSender::levelNumber 1
+2019-09-24 16:03:13 INFO ussdAppLog: UssdReceiverSender::selectionNumber: 1
+2019-09-24 16:03:13 INFO ussdAppLog: UssdReceiverSender::levelNumber: 1
+2019-09-24 16:04:02 INFO ussdAppLog: UssdReceiverSender::User Message: No 2  George Bush Street, Idumota, Lagos
+2019-09-24 16:04:02 INFO ussdAppLog: UssdReceiverSender::Address: 060307ec9aa619a638a064a77e39046c
+2019-09-24 16:04:02 INFO ussdAppLog: UssdReceiverSender::Conversation ID: 6.528885364873797E9
+2019-09-24 16:04:02 INFO ussdAppLog: UssdReceiverSender::Correlation ID: 0.853522328069393
+2019-09-24 16:04:02 INFO ussdAppLog: UssdReceiverSender::currentUserMap =={selectionNumber=1, FullName=George Bush, levelNumber=2}
+2019-09-24 16:04:02 INFO ussdAppLog: UssdReceiverSender::selectionNumber 1
+2019-09-24 16:04:02 INFO ussdAppLog: UssdReceiverSender::FullName George Bush
+2019-09-24 16:04:02 INFO ussdAppLog: UssdReceiverSender::levelNumber 2
+2019-09-24 16:04:02 INFO ussdAppLog: UssdReceiverSender::selectionNumber: 1
+2019-09-24 16:04:02 INFO ussdAppLog: UssdReceiverSender::levelNumber: 2
+2019-09-24 16:04:23 INFO ussdAppLog: UssdReceiverSender::User Message: GeorgeB
+2019-09-24 16:04:23 INFO ussdAppLog: UssdReceiverSender::Address: 060307ec9aa619a638a064a77e39046c
+2019-09-24 16:04:23 INFO ussdAppLog: UssdReceiverSender::Conversation ID: 4.2336495050750986E7
+2019-09-24 16:04:23 INFO ussdAppLog: UssdReceiverSender::Correlation ID: 0.6867724775609464
+2019-09-24 16:04:23 INFO ussdAppLog: UssdReceiverSender::currentUserMap =={selectionNumber=1, Address=No 2  George Bush Street, Idumota, Lagos, FullName=George Bush, levelNumber=3}
+2019-09-24 16:04:23 INFO ussdAppLog: UssdReceiverSender::selectionNumber 1
+2019-09-24 16:04:23 INFO ussdAppLog: UssdReceiverSender::Address No 2  George Bush Street, Idumota, Lagos
+2019-09-24 16:04:23 INFO ussdAppLog: UssdReceiverSender::FullName George Bush
+2019-09-24 16:04:23 INFO ussdAppLog: UssdReceiverSender::levelNumber 3
+2019-09-24 16:04:23 INFO ussdAppLog: UssdReceiverSender::selectionNumber: 1
+2019-09-24 16:04:23 INFO ussdAppLog: UssdReceiverSender::levelNumber: 3
+2019-09-24 16:05:16 INFO ussdAppLog: UssdReceiverSender::User Message: me19georgeO
+2019-09-24 16:05:16 INFO ussdAppLog: UssdReceiverSender::Address: 060307ec9aa619a638a064a77e39046c
+2019-09-24 16:05:16 INFO ussdAppLog: UssdReceiverSender::Conversation ID: 7.628379481960782E9
+2019-09-24 16:05:16 INFO ussdAppLog: UssdReceiverSender::Correlation ID: 0.24677661053866284
+2019-09-24 16:05:16 INFO ussdAppLog: UssdReceiverSender::currentUserMap =={selectionNumber=1, UserName=GeorgeB, Address=No 2  George Bush Street, Idumota, Lagos, FullName=George Bush, levelNumber=4}
+2019-09-24 16:05:16 INFO ussdAppLog: UssdReceiverSender::selectionNumber 1
+2019-09-24 16:05:16 INFO ussdAppLog: UssdReceiverSender::UserName GeorgeB
+2019-09-24 16:05:16 INFO ussdAppLog: UssdReceiverSender::Address No 2  George Bush Street, Idumota, Lagos
+2019-09-24 16:05:16 INFO ussdAppLog: UssdReceiverSender::FullName George Bush
+2019-09-24 16:05:16 INFO ussdAppLog: UssdReceiverSender::levelNumber 4
+2019-09-24 16:05:16 INFO ussdAppLog: UssdReceiverSender::selectionNumber: 1
+2019-09-24 16:05:16 INFO ussdAppLog: UssdReceiverSender::levelNumber: 4
+2019-09-24 16:05:19 INFO ussdAppLog: UssdReceiverSender::Completed Account Info::
+2019-09-24 16:05:19 INFO ussdAppLog: UssdReceiverSender::selectionNumber 1
+2019-09-24 16:05:19 INFO ussdAppLog: UssdReceiverSender::UserName GeorgeB
+2019-09-24 16:05:19 INFO ussdAppLog: UssdReceiverSender::Address No 2  George Bush Street, Idumota, Lagos
+2019-09-24 16:05:19 INFO ussdAppLog: UssdReceiverSender::Pin me19georgeO
+2019-09-24 16:05:19 INFO ussdAppLog: UssdReceiverSender::FullName George Bush
+2019-09-24 16:05:19 INFO ussdAppLog: UssdReceiverSender::levelNumber 4
+2019-09-24 16:05:19 INFO ussdAppLog: UssdReceiverSender::PhoneNumber 060307ec9aa619a638a064a77e39046c
+2019-09-24 16:11:32 INFO ussdAppLog: UssdReceiverSender::User Message: me19georgeO
+2019-09-24 16:11:32 INFO ussdAppLog: UssdReceiverSender::Address: 280c8bb4091336264c268e01d3156a19
+2019-09-24 16:11:32 INFO ussdAppLog: UssdReceiverSender::Conversation ID: 9.694083516582364E8
+2019-09-24 16:11:32 INFO ussdAppLog: UssdReceiverSender::Correlation ID: 0.7006901263514362
+2019-09-24 16:11:32 INFO ussdAppLog: UssdReceiverSender::currentUserMap ==null
+2019-09-24 16:11:32 INFO ussdAppLog: UssdReceiverSender::A first time user. Please select something
+2019-09-24 16:11:45 INFO ussdAppLog: UssdReceiverSender::User Message: 1
+2019-09-24 16:11:45 INFO ussdAppLog: UssdReceiverSender::Address: 280c8bb4091336264c268e01d3156a19
+2019-09-24 16:11:45 INFO ussdAppLog: UssdReceiverSender::Conversation ID: 2.427497530962033E9
+2019-09-24 16:11:45 INFO ussdAppLog: UssdReceiverSender::Correlation ID: 0.5198427895256271
+2019-09-24 16:11:45 INFO ussdAppLog: UssdReceiverSender::currentUserMap =={}
+2019-09-24 16:12:07 INFO ussdAppLog: UssdReceiverSender::User Message: Okoh Andrew
+2019-09-24 16:12:07 INFO ussdAppLog: UssdReceiverSender::Address: 280c8bb4091336264c268e01d3156a19
+2019-09-24 16:12:07 INFO ussdAppLog: UssdReceiverSender::Conversation ID: 4.241642480989054E9
+2019-09-24 16:12:07 INFO ussdAppLog: UssdReceiverSender::Correlation ID: 0.048713950936698946
+2019-09-24 16:12:07 INFO ussdAppLog: UssdReceiverSender::currentUserMap =={selectionNumber=1, levelNumber=1}
+2019-09-24 16:12:07 INFO ussdAppLog: UssdReceiverSender::selectionNumber 1
+2019-09-24 16:12:07 INFO ussdAppLog: UssdReceiverSender::levelNumber 1
+2019-09-24 16:12:07 INFO ussdAppLog: UssdReceiverSender::selectionNumber: 1
+2019-09-24 16:12:07 INFO ussdAppLog: UssdReceiverSender::levelNumber: 1
+2019-09-24 16:13:03 INFO ussdAppLog: UssdReceiverSender::User Message: No 5 Okoh Stree, Andrew Island, US
+2019-09-24 16:13:03 INFO ussdAppLog: UssdReceiverSender::Address: 280c8bb4091336264c268e01d3156a19
+2019-09-24 16:13:03 INFO ussdAppLog: UssdReceiverSender::Conversation ID: 5.53655843199584E9
+2019-09-24 16:13:03 INFO ussdAppLog: UssdReceiverSender::Correlation ID: 0.9451768237959465
+2019-09-24 16:13:03 INFO ussdAppLog: UssdReceiverSender::currentUserMap =={selectionNumber=1, FullName=Okoh Andrew, levelNumber=2}
+2019-09-24 16:13:03 INFO ussdAppLog: UssdReceiverSender::selectionNumber 1
+2019-09-24 16:13:03 INFO ussdAppLog: UssdReceiverSender::FullName Okoh Andrew
+2019-09-24 16:13:03 INFO ussdAppLog: UssdReceiverSender::levelNumber 2
+2019-09-24 16:13:03 INFO ussdAppLog: UssdReceiverSender::selectionNumber: 1
+2019-09-24 16:13:03 INFO ussdAppLog: UssdReceiverSender::levelNumber: 2
+2019-09-24 16:13:19 INFO ussdAppLog: UssdReceiverSender::User Message: AndyO
+2019-09-24 16:13:19 INFO ussdAppLog: UssdReceiverSender::Address: 280c8bb4091336264c268e01d3156a19
+2019-09-24 16:13:19 INFO ussdAppLog: UssdReceiverSender::Conversation ID: 2.3615934717782483E9
+2019-09-24 16:13:19 INFO ussdAppLog: UssdReceiverSender::Correlation ID: 0.5072887883481711
+2019-09-24 16:13:19 INFO ussdAppLog: UssdReceiverSender::currentUserMap =={selectionNumber=1, Address=No 5 Okoh Stree, Andrew Island, US, FullName=Okoh Andrew, levelNumber=3}
+2019-09-24 16:13:19 INFO ussdAppLog: UssdReceiverSender::selectionNumber 1
+2019-09-24 16:13:19 INFO ussdAppLog: UssdReceiverSender::Address No 5 Okoh Stree, Andrew Island, US
+2019-09-24 16:13:19 INFO ussdAppLog: UssdReceiverSender::FullName Okoh Andrew
+2019-09-24 16:13:19 INFO ussdAppLog: UssdReceiverSender::levelNumber 3
+2019-09-24 16:13:19 INFO ussdAppLog: UssdReceiverSender::selectionNumber: 1
+2019-09-24 16:13:19 INFO ussdAppLog: UssdReceiverSender::levelNumber: 3
+2019-09-24 16:13:40 INFO ussdAppLog: UssdReceiverSender::User Message: andyO19
+2019-09-24 16:13:40 INFO ussdAppLog: UssdReceiverSender::Address: 280c8bb4091336264c268e01d3156a19
+2019-09-24 16:13:40 INFO ussdAppLog: UssdReceiverSender::Conversation ID: 9.426498318237831E9
+2019-09-24 16:13:40 INFO ussdAppLog: UssdReceiverSender::Correlation ID: 0.6862883291907103
+2019-09-24 16:13:40 INFO ussdAppLog: UssdReceiverSender::currentUserMap =={selectionNumber=1, UserName=AndyO, Address=No 5 Okoh Stree, Andrew Island, US, FullName=Okoh Andrew, levelNumber=4}
+2019-09-24 16:13:40 INFO ussdAppLog: UssdReceiverSender::selectionNumber 1
+2019-09-24 16:13:40 INFO ussdAppLog: UssdReceiverSender::UserName AndyO
+2019-09-24 16:13:40 INFO ussdAppLog: UssdReceiverSender::Address No 5 Okoh Stree, Andrew Island, US
+2019-09-24 16:13:40 INFO ussdAppLog: UssdReceiverSender::FullName Okoh Andrew
+2019-09-24 16:13:40 INFO ussdAppLog: UssdReceiverSender::levelNumber 4
+2019-09-24 16:13:40 INFO ussdAppLog: UssdReceiverSender::selectionNumber: 1
+2019-09-24 16:13:40 INFO ussdAppLog: UssdReceiverSender::levelNumber: 4
+2019-09-24 16:13:43 INFO ussdAppLog: UssdReceiverSender::Completed Account Info::
+2019-09-24 16:13:43 INFO ussdAppLog: UssdReceiverSender::selectionNumber 1
+2019-09-24 16:13:43 INFO ussdAppLog: UssdReceiverSender::UserName AndyO
+2019-09-24 16:13:43 INFO ussdAppLog: UssdReceiverSender::Address No 5 Okoh Stree, Andrew Island, US
+2019-09-24 16:13:43 INFO ussdAppLog: UssdReceiverSender::Pin andyO19
+2019-09-24 16:13:43 INFO ussdAppLog: UssdReceiverSender::FullName Okoh Andrew
+2019-09-24 16:13:43 INFO ussdAppLog: UssdReceiverSender::levelNumber 4
+2019-09-24 16:13:43 INFO ussdAppLog: UssdReceiverSender::PhoneNumber 280c8bb4091336264c268e01d3156a19
+2019-09-24 16:14:36 INFO ussdAppLog: UssdReceiverSender::User Message: 9
+2019-09-24 16:14:36 INFO ussdAppLog: UssdReceiverSender::Address: 280c8bb4091336264c268e01d3156a19
+2019-09-24 16:14:36 INFO ussdAppLog: UssdReceiverSender::Conversation ID: 1.4122076564328556E9
+2019-09-24 16:14:36 INFO ussdAppLog: UssdReceiverSender::Correlation ID: 0.5216789544666399
+2019-09-24 16:14:36 INFO ussdAppLog: UssdReceiverSender::currentUserMap =={selectionNumber=1, UserName=AndyO, Address=No 5 Okoh Stree, Andrew Island, US, Pin=andyO19, FullName=Okoh Andrew, levelNumber=4, PhoneNumber=280c8bb4091336264c268e01d3156a19}
+2019-09-24 16:14:36 INFO ussdAppLog: UssdReceiverSender::selectionNumber 1
+2019-09-24 16:14:36 INFO ussdAppLog: UssdReceiverSender::UserName AndyO
+2019-09-24 16:14:36 INFO ussdAppLog: UssdReceiverSender::Address No 5 Okoh Stree, Andrew Island, US
+2019-09-24 16:14:36 INFO ussdAppLog: UssdReceiverSender::Pin andyO19
+2019-09-24 16:14:36 INFO ussdAppLog: UssdReceiverSender::FullName Okoh Andrew
+2019-09-24 16:14:36 INFO ussdAppLog: UssdReceiverSender::levelNumber 4
+2019-09-24 16:14:36 INFO ussdAppLog: UssdReceiverSender::PhoneNumber 280c8bb4091336264c268e01d3156a19
+2019-09-24 16:14:49 INFO ussdAppLog: UssdReceiverSender::User Message: 2
+2019-09-24 16:14:49 INFO ussdAppLog: UssdReceiverSender::Address: 280c8bb4091336264c268e01d3156a19
+2019-09-24 16:14:49 INFO ussdAppLog: UssdReceiverSender::Conversation ID: 4.439021761896836E9
+2019-09-24 16:14:49 INFO ussdAppLog: UssdReceiverSender::Correlation ID: 0.7548749274020877
+2019-09-24 16:14:49 INFO ussdAppLog: UssdReceiverSender::currentUserMap =={selectionNumber=1, UserName=AndyO, Address=No 5 Okoh Stree, Andrew Island, US, Pin=andyO19, FullName=Okoh Andrew, levelNumber=4, PhoneNumber=280c8bb4091336264c268e01d3156a19}
+2019-09-24 16:14:49 INFO ussdAppLog: UssdReceiverSender::selectionNumber 1
+2019-09-24 16:14:49 INFO ussdAppLog: UssdReceiverSender::UserName AndyO
+2019-09-24 16:14:49 INFO ussdAppLog: UssdReceiverSender::Address No 5 Okoh Stree, Andrew Island, US
+2019-09-24 16:14:49 INFO ussdAppLog: UssdReceiverSender::Pin andyO19
+2019-09-24 16:14:49 INFO ussdAppLog: UssdReceiverSender::FullName Okoh Andrew
+2019-09-24 16:14:49 INFO ussdAppLog: UssdReceiverSender::levelNumber 4
+2019-09-24 16:14:49 INFO ussdAppLog: UssdReceiverSender::PhoneNumber 280c8bb4091336264c268e01d3156a19
+2019-09-24 16:15:04 INFO ussdAppLog: UssdReceiverSender::User Message: 26000
+2019-09-24 16:15:04 INFO ussdAppLog: UssdReceiverSender::Address: 280c8bb4091336264c268e01d3156a19
+2019-09-24 16:15:04 INFO ussdAppLog: UssdReceiverSender::Conversation ID: 4.680969402037483E9
+2019-09-24 16:15:04 INFO ussdAppLog: UssdReceiverSender::Correlation ID: 0.277327830530512
+2019-09-24 16:15:04 INFO ussdAppLog: UssdReceiverSender::currentUserMap =={selectionNumber=2, UserName=AndyO, Address=No 5 Okoh Stree, Andrew Island, US, Pin=andyO19, FullName=Okoh Andrew, levelNumber=1, PhoneNumber=280c8bb4091336264c268e01d3156a19}
+2019-09-24 16:15:04 INFO ussdAppLog: UssdReceiverSender::selectionNumber 2
+2019-09-24 16:15:04 INFO ussdAppLog: UssdReceiverSender::UserName AndyO
+2019-09-24 16:15:04 INFO ussdAppLog: UssdReceiverSender::Address No 5 Okoh Stree, Andrew Island, US
+2019-09-24 16:15:04 INFO ussdAppLog: UssdReceiverSender::Pin andyO19
+2019-09-24 16:15:04 INFO ussdAppLog: UssdReceiverSender::FullName Okoh Andrew
+2019-09-24 16:15:04 INFO ussdAppLog: UssdReceiverSender::levelNumber 1
+2019-09-24 16:15:04 INFO ussdAppLog: UssdReceiverSender::PhoneNumber 280c8bb4091336264c268e01d3156a19
+2019-09-24 16:15:04 INFO ussdAppLog: UssdReceiverSender::selectionNumber: 2
+2019-09-24 16:15:04 INFO ussdAppLog: UssdReceiverSender::levelNumber: 1
+2019-09-24 16:15:06 INFO ussdAppLog: UssdReceiverSender::Completed Account Info::
+2019-09-24 16:15:06 INFO ussdAppLog: UssdReceiverSender::selectionNumber 2
+2019-09-24 16:15:06 INFO ussdAppLog: UssdReceiverSender::UserName AndyO
+2019-09-24 16:15:06 INFO ussdAppLog: UssdReceiverSender::Address No 5 Okoh Stree, Andrew Island, US
+2019-09-24 16:15:06 INFO ussdAppLog: UssdReceiverSender::Pin andyO19
+2019-09-24 16:15:06 INFO ussdAppLog: UssdReceiverSender::FullName Okoh Andrew
+2019-09-24 16:15:06 INFO ussdAppLog: UssdReceiverSender::Amount 26000
+2019-09-24 16:15:06 INFO ussdAppLog: UssdReceiverSender::levelNumber 1
+2019-09-24 16:15:06 INFO ussdAppLog: UssdReceiverSender::PhoneNumber 280c8bb4091336264c268e01d3156a19
+2019-09-24 16:15:35 INFO ussdAppLog: UssdReceiverSender::User Message: 9
+2019-09-24 16:15:35 INFO ussdAppLog: UssdReceiverSender::Address: 280c8bb4091336264c268e01d3156a19
+2019-09-24 16:15:35 INFO ussdAppLog: UssdReceiverSender::Conversation ID: 9.543350605348785E9
+2019-09-24 16:15:35 INFO ussdAppLog: UssdReceiverSender::Correlation ID: 0.03017800215936073
+2019-09-24 16:15:35 INFO ussdAppLog: UssdReceiverSender::currentUserMap =={selectionNumber=2, UserName=AndyO, Address=No 5 Okoh Stree, Andrew Island, US, Pin=andyO19, FullName=Okoh Andrew, Amount=26000, levelNumber=2, PhoneNumber=280c8bb4091336264c268e01d3156a19}
+2019-09-24 16:15:35 INFO ussdAppLog: UssdReceiverSender::selectionNumber 2
+2019-09-24 16:15:35 INFO ussdAppLog: UssdReceiverSender::UserName AndyO
+2019-09-24 16:15:35 INFO ussdAppLog: UssdReceiverSender::Address No 5 Okoh Stree, Andrew Island, US
+2019-09-24 16:15:35 INFO ussdAppLog: UssdReceiverSender::Pin andyO19
+2019-09-24 16:15:35 INFO ussdAppLog: UssdReceiverSender::FullName Okoh Andrew
+2019-09-24 16:15:35 INFO ussdAppLog: UssdReceiverSender::Amount 26000
+2019-09-24 16:15:35 INFO ussdAppLog: UssdReceiverSender::levelNumber 2
+2019-09-24 16:15:35 INFO ussdAppLog: UssdReceiverSender::PhoneNumber 280c8bb4091336264c268e01d3156a19
+2019-09-24 16:15:48 INFO ussdAppLog: UssdReceiverSender::User Message: 3
+2019-09-24 16:15:48 INFO ussdAppLog: UssdReceiverSender::Address: 280c8bb4091336264c268e01d3156a19
+2019-09-24 16:15:48 INFO ussdAppLog: UssdReceiverSender::Conversation ID: 5.369227075325234E8
+2019-09-24 16:15:48 INFO ussdAppLog: UssdReceiverSender::Correlation ID: 0.5064726605322051
+2019-09-24 16:15:48 INFO ussdAppLog: UssdReceiverSender::currentUserMap =={selectionNumber=2, UserName=AndyO, Address=No 5 Okoh Stree, Andrew Island, US, Pin=andyO19, FullName=Okoh Andrew, Amount=26000, levelNumber=2, PhoneNumber=280c8bb4091336264c268e01d3156a19}
+2019-09-24 16:15:48 INFO ussdAppLog: UssdReceiverSender::selectionNumber 2
+2019-09-24 16:15:48 INFO ussdAppLog: UssdReceiverSender::UserName AndyO
+2019-09-24 16:15:48 INFO ussdAppLog: UssdReceiverSender::Address No 5 Okoh Stree, Andrew Island, US
+2019-09-24 16:15:48 INFO ussdAppLog: UssdReceiverSender::Pin andyO19
+2019-09-24 16:15:48 INFO ussdAppLog: UssdReceiverSender::FullName Okoh Andrew
+2019-09-24 16:15:48 INFO ussdAppLog: UssdReceiverSender::Amount 26000
+2019-09-24 16:15:48 INFO ussdAppLog: UssdReceiverSender::levelNumber 2
+2019-09-24 16:15:48 INFO ussdAppLog: UssdReceiverSender::PhoneNumber 280c8bb4091336264c268e01d3156a19
+2019-09-24 16:16:18 INFO ussdAppLog: UssdReceiverSender::User Message: 3200
+2019-09-24 16:16:18 INFO ussdAppLog: UssdReceiverSender::Address: 280c8bb4091336264c268e01d3156a19
+2019-09-24 16:16:18 INFO ussdAppLog: UssdReceiverSender::Conversation ID: 2.5943852357284646E9
+2019-09-24 16:16:18 INFO ussdAppLog: UssdReceiverSender::Correlation ID: 0.9984037816846043
+2019-09-24 16:16:18 INFO ussdAppLog: UssdReceiverSender::currentUserMap =={selectionNumber=3, UserName=AndyO, Address=No 5 Okoh Stree, Andrew Island, US, Pin=andyO19, FullName=Okoh Andrew, Amount=26000, levelNumber=1, PhoneNumber=280c8bb4091336264c268e01d3156a19}
+2019-09-24 16:16:18 INFO ussdAppLog: UssdReceiverSender::selectionNumber 3
+2019-09-24 16:16:18 INFO ussdAppLog: UssdReceiverSender::UserName AndyO
+2019-09-24 16:16:18 INFO ussdAppLog: UssdReceiverSender::Address No 5 Okoh Stree, Andrew Island, US
+2019-09-24 16:16:18 INFO ussdAppLog: UssdReceiverSender::Pin andyO19
+2019-09-24 16:16:18 INFO ussdAppLog: UssdReceiverSender::FullName Okoh Andrew
+2019-09-24 16:16:18 INFO ussdAppLog: UssdReceiverSender::Amount 26000
+2019-09-24 16:16:18 INFO ussdAppLog: UssdReceiverSender::levelNumber 1
+2019-09-24 16:16:18 INFO ussdAppLog: UssdReceiverSender::PhoneNumber 280c8bb4091336264c268e01d3156a19
+2019-09-24 16:16:18 INFO ussdAppLog: UssdReceiverSender::selectionNumber: 3
+2019-09-24 16:16:18 INFO ussdAppLog: UssdReceiverSender::levelNumber: 1
+2019-09-24 16:16:30 INFO ussdAppLog: UssdReceiverSender::User Message: andyO19
+2019-09-24 16:16:30 INFO ussdAppLog: UssdReceiverSender::Address: 280c8bb4091336264c268e01d3156a19
+2019-09-24 16:16:30 INFO ussdAppLog: UssdReceiverSender::Conversation ID: 9.521993842378523E9
+2019-09-24 16:16:30 INFO ussdAppLog: UssdReceiverSender::Correlation ID: 0.7488417914603628
+2019-09-24 16:16:30 INFO ussdAppLog: UssdReceiverSender::currentUserMap =={selectionNumber=3, UserName=AndyO, Address=No 5 Okoh Stree, Andrew Island, US, Pin=andyO19, FullName=Okoh Andrew, Amount=3200, levelNumber=2, PhoneNumber=280c8bb4091336264c268e01d3156a19}
+2019-09-24 16:16:30 INFO ussdAppLog: UssdReceiverSender::selectionNumber 3
+2019-09-24 16:16:30 INFO ussdAppLog: UssdReceiverSender::UserName AndyO
+2019-09-24 16:16:30 INFO ussdAppLog: UssdReceiverSender::Address No 5 Okoh Stree, Andrew Island, US
+2019-09-24 16:16:30 INFO ussdAppLog: UssdReceiverSender::Pin andyO19
+2019-09-24 16:16:30 INFO ussdAppLog: UssdReceiverSender::FullName Okoh Andrew
+2019-09-24 16:16:30 INFO ussdAppLog: UssdReceiverSender::Amount 3200
+2019-09-24 16:16:30 INFO ussdAppLog: UssdReceiverSender::levelNumber 2
+2019-09-24 16:16:30 INFO ussdAppLog: UssdReceiverSender::PhoneNumber 280c8bb4091336264c268e01d3156a19
+2019-09-24 16:16:30 INFO ussdAppLog: UssdReceiverSender::selectionNumber: 3
+2019-09-24 16:16:30 INFO ussdAppLog: UssdReceiverSender::levelNumber: 2
+2019-09-24 16:16:32 INFO ussdAppLog: UssdReceiverSender::Completed Account Info::
+2019-09-24 16:16:32 INFO ussdAppLog: UssdReceiverSender::selectionNumber 3
+2019-09-24 16:16:32 INFO ussdAppLog: UssdReceiverSender::UserName AndyO
+2019-09-24 16:16:32 INFO ussdAppLog: UssdReceiverSender::Address No 5 Okoh Stree, Andrew Island, US
+2019-09-24 16:16:32 INFO ussdAppLog: UssdReceiverSender::Pin andyO19
+2019-09-24 16:16:32 INFO ussdAppLog: UssdReceiverSender::FullName Okoh Andrew
+2019-09-24 16:16:32 INFO ussdAppLog: UssdReceiverSender::Amount 3200
+2019-09-24 16:16:32 INFO ussdAppLog: UssdReceiverSender::levelNumber 3
+2019-09-24 16:16:32 INFO ussdAppLog: UssdReceiverSender::PhoneNumber 280c8bb4091336264c268e01d3156a19
+2019-09-24 16:17:47 INFO ussdAppLog: UssdReceiverSender::User Message: 9
+2019-09-24 16:17:47 INFO ussdAppLog: UssdReceiverSender::Address: 280c8bb4091336264c268e01d3156a19
+2019-09-24 16:17:47 INFO ussdAppLog: UssdReceiverSender::Conversation ID: 1.6465076079899955E9
+2019-09-24 16:17:47 INFO ussdAppLog: UssdReceiverSender::Correlation ID: 0.9143068295714568
+2019-09-24 16:17:47 INFO ussdAppLog: UssdReceiverSender::currentUserMap =={selectionNumber=3, UserName=AndyO, Address=No 5 Okoh Stree, Andrew Island, US, Pin=andyO19, FullName=Okoh Andrew, Amount=3200, levelNumber=3, PhoneNumber=280c8bb4091336264c268e01d3156a19}
+2019-09-24 16:17:48 INFO ussdAppLog: UssdReceiverSender::selectionNumber 3
+2019-09-24 16:17:48 INFO ussdAppLog: UssdReceiverSender::UserName AndyO
+2019-09-24 16:17:48 INFO ussdAppLog: UssdReceiverSender::Address No 5 Okoh Stree, Andrew Island, US
+2019-09-24 16:17:48 INFO ussdAppLog: UssdReceiverSender::Pin andyO19
+2019-09-24 16:17:48 INFO ussdAppLog: UssdReceiverSender::FullName Okoh Andrew
+2019-09-24 16:17:48 INFO ussdAppLog: UssdReceiverSender::Amount 3200
+2019-09-24 16:17:48 INFO ussdAppLog: UssdReceiverSender::levelNumber 3
+2019-09-24 16:17:48 INFO ussdAppLog: UssdReceiverSender::PhoneNumber 280c8bb4091336264c268e01d3156a19
+2019-09-24 16:18:03 INFO ussdAppLog: UssdReceiverSender::User Message: 4
+2019-09-24 16:18:03 INFO ussdAppLog: UssdReceiverSender::Address: 280c8bb4091336264c268e01d3156a19
+2019-09-24 16:18:03 INFO ussdAppLog: UssdReceiverSender::Conversation ID: 5.787743848785766E9
+2019-09-24 16:18:03 INFO ussdAppLog: UssdReceiverSender::Correlation ID: 0.01454343311447015
+2019-09-24 16:18:03 INFO ussdAppLog: UssdReceiverSender::currentUserMap =={selectionNumber=3, UserName=AndyO, Address=No 5 Okoh Stree, Andrew Island, US, Pin=andyO19, FullName=Okoh Andrew, Amount=3200, levelNumber=3, PhoneNumber=280c8bb4091336264c268e01d3156a19}
+2019-09-24 16:18:03 INFO ussdAppLog: UssdReceiverSender::selectionNumber 3
+2019-09-24 16:18:03 INFO ussdAppLog: UssdReceiverSender::UserName AndyO
+2019-09-24 16:18:03 INFO ussdAppLog: UssdReceiverSender::Address No 5 Okoh Stree, Andrew Island, US
+2019-09-24 16:18:03 INFO ussdAppLog: UssdReceiverSender::Pin andyO19
+2019-09-24 16:18:03 INFO ussdAppLog: UssdReceiverSender::FullName Okoh Andrew
+2019-09-24 16:18:03 INFO ussdAppLog: UssdReceiverSender::Amount 3200
+2019-09-24 16:18:03 INFO ussdAppLog: UssdReceiverSender::levelNumber 3
+2019-09-24 16:18:03 INFO ussdAppLog: UssdReceiverSender::PhoneNumber 280c8bb4091336264c268e01d3156a19
+2019-09-24 16:18:20 INFO ussdAppLog: UssdReceiverSender::User Message: andyO19
+2019-09-24 16:18:20 INFO ussdAppLog: UssdReceiverSender::Address: 280c8bb4091336264c268e01d3156a19
+2019-09-24 16:18:20 INFO ussdAppLog: UssdReceiverSender::Conversation ID: 9.329867501519705E9
+2019-09-24 16:18:20 INFO ussdAppLog: UssdReceiverSender::Correlation ID: 0.7086198367020969
+2019-09-24 16:18:20 INFO ussdAppLog: UssdReceiverSender::currentUserMap =={selectionNumber=4, UserName=AndyO, Address=No 5 Okoh Stree, Andrew Island, US, Pin=andyO19, FullName=Okoh Andrew, Amount=3200, levelNumber=1, PhoneNumber=280c8bb4091336264c268e01d3156a19}
+2019-09-24 16:18:20 INFO ussdAppLog: UssdReceiverSender::selectionNumber 4
+2019-09-24 16:18:20 INFO ussdAppLog: UssdReceiverSender::UserName AndyO
+2019-09-24 16:18:20 INFO ussdAppLog: UssdReceiverSender::Address No 5 Okoh Stree, Andrew Island, US
+2019-09-24 16:18:20 INFO ussdAppLog: UssdReceiverSender::Pin andyO19
+2019-09-24 16:18:20 INFO ussdAppLog: UssdReceiverSender::FullName Okoh Andrew
+2019-09-24 16:18:20 INFO ussdAppLog: UssdReceiverSender::Amount 3200
+2019-09-24 16:18:20 INFO ussdAppLog: UssdReceiverSender::levelNumber 1
+2019-09-24 16:18:20 INFO ussdAppLog: UssdReceiverSender::PhoneNumber 280c8bb4091336264c268e01d3156a19
+2019-09-24 16:18:20 INFO ussdAppLog: UssdReceiverSender::selectionNumber: 4
+2019-09-24 16:18:20 INFO ussdAppLog: UssdReceiverSender::levelNumber: 1
+2019-09-24 16:18:21 INFO ussdAppLog: UssdReceiverSender::Completed Account Info::
+2019-09-24 16:18:21 INFO ussdAppLog: UssdReceiverSender::selectionNumber 4
+2019-09-24 16:18:21 INFO ussdAppLog: UssdReceiverSender::UserName AndyO
+2019-09-24 16:18:21 INFO ussdAppLog: UssdReceiverSender::Address No 5 Okoh Stree, Andrew Island, US
+2019-09-24 16:18:21 INFO ussdAppLog: UssdReceiverSender::Pin andyO19
+2019-09-24 16:18:21 INFO ussdAppLog: UssdReceiverSender::FullName Okoh Andrew
+2019-09-24 16:18:21 INFO ussdAppLog: UssdReceiverSender::Amount 3200
+2019-09-24 16:18:21 INFO ussdAppLog: UssdReceiverSender::levelNumber 2
+2019-09-24 16:18:21 INFO ussdAppLog: UssdReceiverSender::PhoneNumber 280c8bb4091336264c268e01d3156a19

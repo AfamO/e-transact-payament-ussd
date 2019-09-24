@@ -44,12 +44,15 @@ public class UssdReceiverSender extends MchoiceUssdReceiver {
    AccountService accountService; 
    @Autowired
    PaymentService paymentService;
+   @Autowired SmsSender smsSender;
    @Value("${ussd.url}")
    private String ussd_host_url;
    @Value("${ussd.username}")
    private String ussd_username;
    @Value("${ussd.password}")
-   private String ussd_password; 
+   private String ussd_password;
+   @Value("${sms.to.default}")
+    public String DEFAULT_MSISDN;
    AppLogger appLogger=new AppLogger(this.getClass());
    
    private ConcurrentMap<String,Object> usersMap = new ConcurrentHashMap<>(); // contains the address and the info of the users concurrently- in a threade-safe way
@@ -215,14 +218,15 @@ public class UssdReceiverSender extends MchoiceUssdReceiver {
             currentUserMap.put("Pin", userMessage); // temporary store the user's data
             currentUserMap.put("PhoneNumber", msisdnAddress);// add the user's msisdn.
             Account userAccount = accountService.createAccount(currentUserMap);
-            if(userAccount!=null)
+            if(userAccount!=null){
                 mchoiceUssdSender.sendMessage("Congratulations! "+currentUserMap.get("FullName")+" You have successfully created your account\n\n\n9) Back\n10) Exit", msisdnAddress, sessionId, true);
+                 smsSender.sendSMS(DEFAULT_MSISDN, "Congratulations! "+currentUserMap.get("FullName")+" You have successfully created your account");
+            }   
             else
                 mchoiceUssdSender.sendMessage("OOps! "+currentUserMap.get("FullName")+" Error creating your account\n Try again later\n\n\n9) Back\n10) Exit", msisdnAddress, sessionId, true);
             appLogger.log("Completed Account Info::");
             currentUserMap.forEach((k,v)->appLogger.log(k+" "+v));
-             // not the way it should be for now---testing
-             new SmsSender().sendSMS("+2348064500095", "Thank you for using e-transact app");
+             
         }
 
     }
@@ -232,14 +236,19 @@ public class UssdReceiverSender extends MchoiceUssdReceiver {
             currentUserMap.put("Amount", userMessage); // temporary store the user's data
             //paymentService.initiatePayment(new PaymentRequest());// Disable Paystack Payment Api for now
             if(accountService.depositUserFund(msisdnAddress, Double.parseDouble(currentUserMap.get("Amount").toString())))
-                mchoiceUssdSender.sendMessage("Congratulations! "+" You have successfully deposited your cash\n\n\n9) Back\n10) Exit", msisdnAddress, sessionId, true);
+            {
+                String msgToSend="Congratulations! "+" You have successfully deposited your cash\n\n\n9) Back\n10) Exit";
+                mchoiceUssdSender.sendMessage(msgToSend, msisdnAddress, sessionId, true);
+                // Note, the default msisdn-gsm number- is used for now since I am working with a Simulator that doesn't have a real gsm number for sms.
+                smsSender.sendSMS(DEFAULT_MSISDN, "Congratulations! \n You have successfully deposited your cash");
+            }
             else
                 mchoiceUssdSender.sendMessage("OOps!  Error occured depositing your cash\n Try again later\n\n\n9) Back\n10) Exit", msisdnAddress, sessionId, true);
             appLogger.log("Completed Account Info::");
             currentUserMap.forEach((k,v)->appLogger.log(k+" "+v));
             currentUserMap.put("levelNumber", 2); 
             // not the way it should be for now---testing
-            new SmsSender().sendSMS("+2348064500095", "Thank you for using e-transact app");
+            
         }
     }
     
@@ -255,7 +264,12 @@ public class UssdReceiverSender extends MchoiceUssdReceiver {
             Account userAccount = accountService.getUserAccount(msisdnAddress);
             Map withdrawDetails = accountService.withdraw(userAccount, currentUserMap.get("Pin").toString(), Double.parseDouble(currentUserMap.get("Amount").toString()));
             if(withdrawDetails!=null && withdrawDetails.get("status").toString().equals("success"))
+            {
                 mchoiceUssdSender.sendMessage("Please take your withdrawn cash here: N"+withdrawDetails.get("withdrawn_amount").toString()+" \n\n\n9) Back\n10) Exit", msisdnAddress, sessionId, true);
+                // Note, the default msisdn-gsm number- is used for now since I am working with a Simulator that doesn't have a real gsm number for sms.
+                smsSender.sendSMS(DEFAULT_MSISDN, "Please take your withdrawn cash here:\n N"+withdrawDetails.get("withdrawn_amount").toString()+" ");
+            }
+                
             else
                 mchoiceUssdSender.sendMessage("OOps!  Error occured withdrawing your cash\n\n Error Message:"+withdrawDetails.get("status").toString()+" \n\n\n9) Back\n10) Exit", msisdnAddress, sessionId, true);
             appLogger.log("Completed Account Info::");
@@ -271,7 +285,11 @@ public class UssdReceiverSender extends MchoiceUssdReceiver {
             Account userAccount = accountService.getUserAccount(msisdnAddress);
             Number balance = accountService.getUserAccountBalance(userAccount, currentUserMap.get("Pin").toString());
             if(balance!=null && balance!= new Integer(-1))
+            {
                 mchoiceUssdSender.sendMessage("Dear "+userAccount.getFullName()+"\n Your Account Balance is::N "+balance+" \n\n\n9) Back\n10) Exit", msisdnAddress, sessionId, true);
+                smsSender.sendSMS(DEFAULT_MSISDN, "Dear "+userAccount.getFullName()+"\n Your Account Balance is::N "+balance);
+            }
+                
             else
                 mchoiceUssdSender.sendMessage("OOps! Ensure your pin is valid  \n\n\n9) Back\n10) Exit", msisdnAddress, sessionId, true);
             appLogger.log("Completed Account Info::");

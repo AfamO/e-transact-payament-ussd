@@ -14,13 +14,15 @@ import com.twilio.Twilio;
 import com.twilio.rest.api.v2010.account.Message;
 import com.twilio.type.PhoneNumber;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+@Component
 public class SmsSender {
     @Value("${sms.sid}")
-    public static  String ACCOUNT_SID;
+    public String ACCOUNT_SID;
     @Value("${sms.token}")
-    public static  String AUTH_TOKEN;
+    public String AUTH_TOKEN;
     @Value("${sms.from}")
-    public static  String FROM;
+    public String FROM;
     public void sendSMS(String to, String text){
         Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
 
